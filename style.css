@@ -1,0 +1,165 @@
+/*global*/
+
+@font-face {
+  font-family: Hershey-Reg;
+  src: url(Hershey-Noailles-Futura-Simplex-Regular.woff);
+}
+
+@font-face {
+  font-family: Hershey-Bold;
+  src: url(Hershey-Noailles-Futura-Simplex-Bold.woff);
+}
+
+@font-face {
+  font-family: Hershey-Ital;
+  src: url(Hershey-Noailles-Times-Duplex-Italic-Regular.woff);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+main {
+	margin: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	transition: .3s color ease-out;
+}
+
+a:hover {
+	color: magenta;
+}
+
+a::before {
+	content: "→ ";
+	color: magenta;
+}
+
+.projectimg a::before{
+	content: "";
+}
+
+/*body::-webkit-scrollbar {
+  display: none;
+}*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: white;
+}
+
+/* thumb */
+::-webkit-scrollbar-thumb {
+  background: magenta; 
+}
+
+::selection {
+  color: white;
+  background: magenta;
+}
+
+.nutritionfacts {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr 1fr;
+	grid-gap: 5px;
+}
+
+#updates ul, .project ul{
+	list-style: none;
+}
+
+/*typography*/
+body, h1, h2, h3, p {
+	font-size: 18px;
+	font-weight: normal;
+	font-family: 'Hershey-Reg';
+	line-height: 1.17;
+}
+
+em{
+	font-family: 'Hershey-Ital';
+}
+
+strong{
+	font-family: 'Hershey-Bold';
+}
+
+
+/*work*/
+#info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 25px;
+	margin-bottom: 25px;
+}
+
+#work {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 25px;
+	margin-top: 15px;
+}
+
+.project {
+	position: relative;
+}
+
+.project > p, h3, ul.specs {
+	margin-top: 10px;
+}
+
+.year {
+	border-left: 1px solid black;
+	position: absolute;
+	height: 100%;
+	padding-left: 5px;
+	left: -5px;
+}
+
+
+/*info*/
+
+#people ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	list-style: none;
+}
+
+.comingsoon div.nutritionfacts{
+	border-top: 1px solid black;
+	padding: 5px;
+}
+
+#people a::before{
+	content: "☻ ";
+}
+
+#people li{
+	list-style: none;
+}
+
+/*specific projects*/
+
+div#fulana.projectimg {
+    /*background-color: lavender;*/
+}
+
+div#guabancex.projectimg {
+    background-color: lightgoldenrodyellow;
+}
+
+
